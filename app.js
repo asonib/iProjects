@@ -29,7 +29,7 @@ app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
 app.get('/', (req, res) => {
-  res.render("index", {title : 'iProjects', cap : 'Got Ideas For New Projects.'});
+  res.render("index", {title : 'Idea Management System', cap : 'Got Ideas For New Projects.'});
 });
 
 
@@ -51,7 +51,7 @@ app.get('/users/register', (req, res) => {
 
 app.use('/ideas', ideas);
 
-const port = 5000;
+const port = 4500;
 
 app.listen(port, () =>{
   console.log(`Server started on port ${port}`);
