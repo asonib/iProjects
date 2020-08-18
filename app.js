@@ -3,6 +3,7 @@ const exphbs  = require('express-handlebars');
 const methodOverride = require('method-override');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+require('dotenv').config();
 
 const app = express();
 
@@ -12,7 +13,7 @@ require('./models/Idea');
 const Idea = mongoose.model('ideas');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/iproject-dev', {useNewUrlParser: true})
+mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true})
 .then(() => {
   console.log('MongoDB Connected');
 }).catch(err => {
@@ -51,7 +52,7 @@ app.get('/users/register', (req, res) => {
 
 app.use('/ideas', ideas);
 
-const port = 4500;
+const port = process.env.PORT;
 
 app.listen(port, () =>{
   console.log(`Server started on port ${port}`);
