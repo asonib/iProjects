@@ -1,5 +1,4 @@
 # iProjects
-<<<<<<< HEAD
 MEAN Application of storing data.
 
 ## Web Application is live at :
