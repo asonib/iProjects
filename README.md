@@ -1,3 +1,6 @@
 # iProjects
-Idea Management system using MEAN stack
-Mods to be done!! 
+MEAN Application of storing data.
+
+## Web Application is live at :
+
+**Web Application Link**: `https://iprojects-app.herokuapp.com`
