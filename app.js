@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const exphbs  = require('express-handlebars');
 const methodOverride = require('method-override');
 const mongoose = require('mongoose');
@@ -6,6 +7,7 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 
 const app = express();
+app.use(express.static(path.join(__dirname, 'public')));
 
 const ideas = require('./routes/ideas');
 
