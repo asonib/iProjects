@@ -30,7 +30,7 @@ app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
 app.get('/', (req, res) => {
-  res.render("index", {title : 'Idea Management System', cap : 'Got Ideas For New Projects.'});
+  res.render("index", {title : 'Idea Storage System', cap : 'Got Ideas For New Projects.'});
 });
 
 
