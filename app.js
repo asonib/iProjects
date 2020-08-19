@@ -43,11 +43,11 @@ app.get('/about', (req, res) => {
 
 
 app.get('/users/login', (req, res) => {
-  res.send('LOGIN');
+  res.send('Authentication to be implemented');
 });
 
 app.get('/users/register', (req, res) => {
-  res.send('REGISTER');
+  res.send('Authentication to be implemented');
 });
 
 app.use('/ideas', ideas);
