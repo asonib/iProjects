@@ -1,5 +1,5 @@
 # iProjects
-MEAN Application for storing data.
+MEAN Application for storing useful data.
 
 ## Web Application is live at :
 
